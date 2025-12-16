@@ -1,0 +1,46 @@
+.custom-link {
+  color: #656565 !important;
+  font-weight: 600;
+  font-size: 1.4rem;         
+  margin: 0 10px;
+  transition: color 0.2s, border-bottom 0.2s;
+  background: none !important;
+  border: none;
+  padding-bottom: 2px;
+}
+
+.custom-link.active {
+  color: #1E88E5 !important;  
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;  
+  background: none !important;
+  padding-bottom: 4px;
+}
+
+.navbar-brand img {
+  height: 90px;     
+  width: 190px;     
+  margin-right: 50px;
+}
+
+/* Enroll button styling */
+.custom-enroll-btn {
+  background: #090734 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-size: 1.7rem !important;         /* Larger button size */
+  font-weight: bold !important;
+  padding: 8px 38px !important;
+  margin-left: 40px !important;
+  transition: background 0.2s;
+}
+
+.custom-enroll-btn:hover, .custom-enroll-btn:focus {
+  background: #0263a3 !important;
+  color: #fff !important;
+}
+
+
+
+

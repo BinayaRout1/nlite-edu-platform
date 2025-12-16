@@ -1,0 +1,201 @@
+.about-main {
+  display: flex;
+  background: linear-gradient(180deg, #003366 0%, #004080 100%);
+  color: #fff;
+  border-radius: 0 0 0 200px ;
+  position: relative;
+  height: 415px;
+  padding: 10px 0 0;
+  overflow: visible;
+  margin-top: 120px;
+  /* padding-top: 100px; */
+}
+
+.about-left {
+  flex: 1 1 500px;
+  max-width: 45%;
+  padding: 48px 0 0 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 320px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #269df8;
+  margin-bottom: 18px;
+  margin-top: -60px;
+  margin-left: 98px;
+  letter-spacing: 2px;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.09;
+  margin-left: 96px;
+}
+
+.about-para {
+  font-size: 1.1rem;
+  margin-bottom: 48px;
+  color: #caddff;
+  font-weight: 400;
+  margin-left: 96px;
+}
+
+.about-dots {
+  width: 165px;
+  margin: 0 auto 0 25px;
+  display: block;
+}
+
+.about-images {
+  flex: 1 1 690px;
+  max-width: 55%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 30px;
+  position: relative;
+}
+
+.about-row-top {
+  display: flex;
+  gap: 38px;
+  margin-bottom: 22px;
+  z-index: 2;
+  margin-right: 110px;
+}
+
+.img-top {
+  border-radius: 13px;
+  margin-top: 20px;
+  width: 280px;
+  height: 190px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px #01234518;
+}
+
+.img-bottom {
+  margin-top:50px;
+  margin-right: 185px;
+  border-radius: 10px;
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px #01234522;
+  z-index: 2;
+}
+
+/* Blue circle - i5.png absolutely positioned behind images */
+.about-circle {
+  position: absolute;
+  right: 48px;
+  top: 170px;
+  width: 180px;
+  margin-top: -30px;
+  margin-right: 35px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.dots {
+  position: absolute;
+  left: 25%;
+  bottom: -21px;  
+  width: 20px;    
+  height: 2px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.about-dots-floating {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.dot1 {
+  left: 0;
+  width: 102px;  
+  height: 40px;  
+}
+
+.dot2 {
+  left: 112px;    
+  width: 102px;  
+  height: 40px;  
+}
+
+@media (max-width: 900px) {
+  .dots {
+    left: 25%;
+    width: 100px;
+    height: 17px;
+    bottom: -18px;
+  }
+  .dot1, .dot2 { width: 54px; height: 12px; }
+  .dot2 { left: 38px; }
+}
+
+/* If you see the composite is not centered, adjust .dots left/width or .dot2 left */
+
+.about-main {
+  position: relative;
+  /* ...existing styles... */
+}
+
+@media (max-width: 1100px) {
+  .about-main { flex-direction: column; border-radius: 0 0 110px 0; padding: 22px 0;}
+  .about-left, .about-images { max-width: 97vw; }
+  .about-row-top { gap: 12px; }
+  .img-top, .img-bottom { width: 98vw !important; max-width: 98vw; height: auto;}
+  .img-bottom { margin-top: 0; }
+  .about-circle { right: 0; top: 160px; width: 140px;}
+}
+
+@media (max-width: 700px) {
+  .about-main { padding: 8px 0 0 0; min-height: 430px; border-radius: 0 0 60px 0;}
+  .about-left { padding: 14px 2vw 0 2vw;}
+  .about-title { font-size: 1.1rem;}
+  .about-heading { font-size: 1.44rem;}
+  .about-para { font-size: 1.01rem;}
+  .about-dots { width: 70px; margin-left: 0;}
+  .about-row-top { gap: 7px;}
+  .about-circle { display: none; }
+}
+/* ...existing styles... */
+
+
+/* Optional responsive tweaks */
+@media (max-width: 900px) {
+  .about-dots-floating {
+    left: 23%;
+    width: 140px;
+    bottom: -28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-dots-floating {
+    left: 6%;
+    width: 78px;
+    bottom: -12px;
+  }
+}

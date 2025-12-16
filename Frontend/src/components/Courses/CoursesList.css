@@ -1,0 +1,141 @@
+
+.courses-section {
+  padding: 60px 0;
+  background-color: #f8f9fb;
+  width: 100vw;
+}
+
+/* Tabs */
+.courses-section .courses-tabs .nav-link {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.courses-section .courses-tabs .nav-link.active {
+  color: #0056ff;
+  border-bottom: 3px solid #0056ff;
+  font-weight: 600;
+}
+
+/* Course Card */
+.courses-section .course-card {
+  width: 274px;
+  height: 390px;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-section .course-card.inactive {
+  opacity: 0.5;
+  transform: scale(0.97);
+}
+
+.courses-section .course-card.active {
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 86, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* Hover effects */
+.courses-section .course-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px rgba(0, 86, 255, 0.4);
+}
+
+/* Image area */
+/* Image area */
+.courses-section .course-image {
+  background-color: #002b55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* increased for better visibility */
+  overflow: hidden;
+}
+
+.courses-section .course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills container while keeping proportions */
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+
+/* Text content */
+.courses-section .card-body {
+  padding: 20px;
+}
+
+.courses-section .card-title {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.courses-section .card-text {
+  font-size: 0.9rem;
+  color: #555;
+  min-height: 60px;
+}
+
+/* Buttons — scoped only to courses section */
+.courses-section .enroll-btn {
+  /* background-color: #007bff;
+  border: none;
+  border-radius: 35px;
+  padding: 8px 0;
+  transition: all 0.3s ease; */
+  background: #007bff;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 28px;
+  border-radius: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  margin-right: 0px;
+  margin-left: 0px;
+  
+}
+
+.courses-section .enroll-btn:hover {
+  background-color: #0056ff;
+  box-shadow: 0 0 12px rgba(0, 86, 255, 0.5);
+}
+
+.courses-section .download-btn {
+  border-radius: 25px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.courses-section .download-btn:hover {
+  background-color: #0056ff;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 86, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .courses-section .course-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .courses-section .courses-tabs .nav-link {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+}
+
+

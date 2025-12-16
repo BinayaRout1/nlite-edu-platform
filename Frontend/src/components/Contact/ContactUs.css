@@ -1,0 +1,69 @@
+
+.contact-page {
+  background-color: #f8f9fa;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.contact-form-section {
+  background: linear-gradient(180deg, #002a7a 50%, #ffffff 50%);
+  padding: 60px 0;
+  position: relative;
+}
+
+.contact-header h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 40px;
+}
+
+.form-container form {
+  color: #003b9a;
+  font-weight: 600;
+  text-align: left; 
+  
+
+    
+}
+.btn-primary {
+  background-color: #002a7a;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #003b9a;
+}
+
+.contact-info-section {
+  background-color: #ffffff;
+}
+
+.contact-info-section h5 {
+  font-weight: 600;
+}
+
+.contact-info-section .icon {
+  width: 70px;
+}
+
+.text-primary {
+  color: #002a7a !important;
+}
+
+/* 🟢 Dotted Pattern Position */
+.dots-img {
+  position: absolute;
+  bottom: -50px;
+  left: 40px;
+  width: 90px;
+  opacity: 0.9;
+  z-index: 1;
+}

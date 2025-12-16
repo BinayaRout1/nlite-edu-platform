@@ -1,0 +1,231 @@
+
+.how-it-works-section {
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* ✅ Ellipse image styling */
+.ellipse-image {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 220px;
+  opacity: 0.9;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Title */
+.section-title-overlap {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.section-title-overlap h2 {
+  background: linear-gradient(90deg, #0072ff, #0060d8);
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Wider blue box */
+.how-it-works-box {
+  background-color: #013b7a;
+  border-radius: 30px;
+  padding: 100px 50px 80px;
+  position: relative;
+  color: white;
+  margin: 60px auto;
+  width: 95vw;           /* <-- wider than container */
+  max-width: 1600px;     /* optional limit for large screens */
+  z-index: 1;
+}
+
+/* Dots pattern */
+.dots-pattern {
+  position: absolute;
+  bottom: -50px;
+  left: 80px;
+  display: grid;
+  grid-template-columns: repeat(6, 10px);
+  grid-template-rows: repeat(6, 10px);
+  gap: 10px;
+}
+
+.dots-pattern div {
+  width: 8px;
+  height: 8px;
+  background-color: #0072ff;
+  border-radius: 50%;
+}
+
+/* Info cards */
+.info-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  color: #013b7a;
+  z-index: 2;
+}
+
+.info-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-card h6 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Steps container */
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.step-item {
+  text-align: center;
+  position: relative;
+}
+
+/* Step boxes */
+/* .step-box {
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 15px 10px;
+  width: 120px;
+  background: transparent;
+  transition: 0.3s;
+} */
+
+.step-box {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.step-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+/* .icon-square {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+} */
+
+.icon-square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 12px; /* add space for text below */
+}
+
+.icon-square i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* .step-number {
+  color: #fff;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+} */
+.step-number {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+
+/* .step-title {
+  font-size: 14px;
+  color: #fff;
+} */
+
+.step-title {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 8px;
+  max-width: 140px;
+  line-height: 1.4;
+}
+
+.step-box:hover .icon-square {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.step-arrow {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .how-it-works-box {
+    width: 100%;
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+  .step-arrow {
+    transform: rotate(90deg);
+    margin: 10px 0;
+  }
+}
+
+/* Zig-zag pattern */
+.steps-container .step-item:nth-child(1) {
+  transform: translateY(20px);
+}
+.steps-container .step-item:nth-child(2) {
+  transform: translateY(-20px);
+}
+.steps-container .step-item:nth-child(3) {
+  transform: translateY(0px);
+}
+.steps-container .step-item:nth-child(4) {
+  transform: translateY(-20px);
+}
+.steps-container .step-item:nth-child(5) {
+  transform: translateY(20px);
+}
+
+.steps-container .step-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  transition: transform 0.3s ease;
+}
